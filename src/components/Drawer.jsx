@@ -1,3 +1,5 @@
+import Dock from "./Dock";
+import Footer from "./Footer";
 import NavTop from "./NavTop";
 
 export default function Drawer({ children }) {
@@ -8,11 +10,15 @@ export default function Drawer({ children }) {
         type="checkbox"
         className="drawer-toggle lg:hidden"
       />
-      <div className="drawer-content flex flex-col">
+      <div className="drawer-content relative flex flex-col">
         {/* Navbar */}
         <NavTop />
         {/* Page content here */}
-        <main> {children} </main>
+        <main className="bg-base-300"> {children} </main>
+        <Footer />
+        <section className="lg:hidden sticky bottom-0">
+          <Dock />
+        </section>
       </div>
       <div className="drawer-side">
         <label

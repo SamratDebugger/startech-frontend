@@ -7,6 +7,8 @@ import Login from "./pages/auth/Login";
 import Registration from "./pages/auth/Registration";
 import Offers from "./pages/Offers";
 import Deals from "./pages/Deals";
+import Compare from "./pages/Compare";
+import PcBuilder from "./pages/PcBuilder";
 
 export default function App() {
   return (
@@ -19,8 +21,8 @@ export default function App() {
           <Route path="/Registration" element={<Registration />} />
           <Route path="/offers" element={<Offers />} />
           <Route path="/deals" element={<Deals />} />
-          <Route path="/" element={<Home />} />
-          <Route path="/" element={<Home />} />
+          <Route path="/compare" element={<Compare />} />
+          <Route path="/pcbuilder" element={<PcBuilder />} />
         </Route>
       </Routes>
     </>
