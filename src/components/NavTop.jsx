@@ -13,7 +13,7 @@ import {
 export default function NavTop() {
   return (
     <header className="bg-brand-accent-dark max-lg:sticky max-lg:top-0">
-      <div className="navbar gap-5 max-w-360 mx-auto px-5 ">
+      <div className="navbar gap-5 max-w-360 mx-auto px-5 py-4">
         <div className="navbar-start  lg:w-auto">
           <div className="lg:hidden">
             <label

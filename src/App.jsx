@@ -9,6 +9,7 @@ import Offers from "./pages/Offers";
 import Deals from "./pages/Deals";
 import Compare from "./pages/Compare";
 import PcBuilder from "./pages/PcBuilder";
+import NotFound from "./pages/NotFound";
 
 export default function App() {
   return (
@@ -17,6 +18,7 @@ export default function App() {
       <Routes>
         <Route element={<Layout />}>
           <Route path="/" element={<Home />} />
+          <Route path="*" element={<NotFound />} />
           <Route path="/login" element={<Login />} />
           <Route path="/Registration" element={<Registration />} />
           <Route path="/offers" element={<Offers />} />

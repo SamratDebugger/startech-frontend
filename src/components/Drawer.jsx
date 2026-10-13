@@ -1,5 +1,6 @@
 import Dock from "./Dock";
 import Footer from "./Footer";
+import NavBottom from "./NavBottom";
 import NavTop from "./NavTop";
 
 export default function Drawer({ children }) {
@@ -13,6 +14,10 @@ export default function Drawer({ children }) {
       <div className="drawer-content relative flex flex-col">
         {/* Navbar */}
         <NavTop />
+        <div className="max-lg:hidden">
+          <NavBottom />
+        </div>
+
         {/* Page content here */}
         <main className="bg-base-300"> {children} </main>
         <Footer />
