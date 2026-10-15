@@ -12,14 +12,17 @@ import {
 
 export default function NavTop() {
   return (
-    <header className="bg-brand-accent-dark max-lg:sticky max-lg:top-0">
+    <header
+      data-theme="dark"
+      className="bg-brand-accent-dark max-lg:sticky max-lg:top-0"
+    >
       <div className="navbar gap-5 max-w-360 mx-auto px-5 py-4">
         <div className="navbar-start  lg:w-auto">
           <div className="lg:hidden">
             <label
               htmlFor="my-drawer-2"
               aria-label="open sidebar"
-              className="btn btn-square btn-ghost drawer-button text-white"
+              className="btn btn-square btn-ghost drawer-button "
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -74,10 +77,10 @@ export default function NavTop() {
             </Link>
           </div>
           <div className="lg:hidden">
-            <button className="btn btn-ghost btn-square text-white">
+            <button className="btn btn-ghost btn-square ">
               <FaMagnifyingGlass />
             </button>
-            <button className="btn btn-ghost btn-square text-white">
+            <button className="btn btn-ghost btn-square ">
               <FaCartShopping />
             </button>
           </div>

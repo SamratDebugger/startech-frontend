@@ -19,7 +19,9 @@ export default function Drawer({ children }) {
         </div>
 
         {/* Page content here */}
-        <main className="bg-base-300"> {children} </main>
+        <main data-theme="light" className="bg-base-300">
+          {children}
+        </main>
         <Footer />
         <section className="lg:hidden sticky bottom-0">
           <Dock />
