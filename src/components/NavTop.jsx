@@ -19,7 +19,7 @@ export default function NavTop() {
             <label
               htmlFor="my-drawer-2"
               aria-label="open sidebar"
-              className="btn btn-square btn-ghost drawer-button"
+              className="btn btn-square btn-ghost drawer-button text-white"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -74,10 +74,10 @@ export default function NavTop() {
             </Link>
           </div>
           <div className="lg:hidden">
-            <button className="btn btn-ghost btn-square">
+            <button className="btn btn-ghost btn-square text-white">
               <FaMagnifyingGlass />
             </button>
-            <button className="btn btn-ghost btn-square">
+            <button className="btn btn-ghost btn-square text-white">
               <FaCartShopping />
             </button>
           </div>
