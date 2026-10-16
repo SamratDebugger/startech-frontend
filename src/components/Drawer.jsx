@@ -1,6 +1,7 @@
 import Dock from "./Dock";
 import Footer from "./Footer";
 import NavBottom from "./NavBottom";
+import NavSidebar from "./NavSidebar";
 import NavTop from "./NavTop";
 
 export default function Drawer({ children }) {
@@ -14,7 +15,7 @@ export default function Drawer({ children }) {
       <div className="drawer-content relative flex flex-col">
         {/* Navbar */}
         <NavTop />
-        <div className="max-lg:hidden">
+        <div className="max-lg:hidden sticky top-0 z-50">
           <NavBottom />
         </div>
 
@@ -23,11 +24,11 @@ export default function Drawer({ children }) {
           {children}
         </main>
         <Footer />
-        <section className="lg:hidden sticky bottom-0">
+        <section className="lg:hidden sticky z-50 bottom-0">
           <Dock />
         </section>
       </div>
-      <div className="drawer-side">
+      <div className="drawer-side z-60">
         <label
           htmlFor="my-drawer-2"
           aria-label="close sidebar"
@@ -35,12 +36,7 @@ export default function Drawer({ children }) {
         ></label>
         <ul className="menu bg-base-200 min-h-full w-80 p-4">
           {/* Sidebar content here */}
-          <li>
-            <a>Sidebar Item 1</a>
-          </li>
-          <li>
-            <a>Sidebar Item 2</a>
-          </li>
+          <NavSidebar />
         </ul>
       </div>
     </div>

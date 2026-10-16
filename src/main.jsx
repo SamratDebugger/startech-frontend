@@ -5,13 +5,16 @@ import App from "./App.jsx";
 import { BrowserRouter } from "react-router";
 import UserProvider from "../context/UserProvider.jsx";
 import TanstackProvider from "../tanstack-query/TanstackProvider.jsx";
+import MenuProvider from "../context/MenuProvider.jsx";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
     <BrowserRouter>
       <UserProvider>
         <TanstackProvider>
-          <App />
+          <MenuProvider>
+            <App />
+          </MenuProvider>
         </TanstackProvider>
       </UserProvider>
     </BrowserRouter>

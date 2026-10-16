@@ -24,33 +24,29 @@ export default function HeroSlider() {
         className="mySwiper"
       >
         <SwiperSlide>
-          {" "}
           <img
-            className="rounded-xl h-full "
+            className="rounded-xl w-full "
             src="/assets/images/carousel-1.webp"
             alt="Carousel 1"
           />
         </SwiperSlide>
         <SwiperSlide>
-          {" "}
           <img
-            className="rounded-xl h-full "
+            className="rounded-xl w-full "
             src="/assets/images/carousel-2.webp"
             alt="Carousel 2"
           />
         </SwiperSlide>
         <SwiperSlide>
-          {" "}
           <img
-            className="rounded-xl h-full "
+            className="rounded-xl w-full  "
             src="/assets/images/carousel-3.webp"
             alt="Carousel 3"
           />
         </SwiperSlide>
         <SwiperSlide>
-          {" "}
           <img
-            className="rounded-xl h-full "
+            className="rounded-xl w-full "
             src="/assets/images/carousel-4.webp"
             alt="Carousel 4"
           />
